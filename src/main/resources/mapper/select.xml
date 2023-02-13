@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.MbtiMatcherProject.mapper.SelectMapper">
+
+    <select id="selectData" resultType="java.util.Map">
+        -- selectData
+        SELECT ui.user_idx     as userIdx
+             , ui.user_name as userName
+             , ui.user_mbti as userMbti
+        FROM star.user_info ui
+        WHERE 1 = 1
+--         AND ui.user_name = '한소희'
+    </select>
+
+    <select id="selectData1" resultType="java.util.Map">
+        SELECT *
+        FROM t_board
+        WHERE 1 = 1
+    </select>
+</mapper>
